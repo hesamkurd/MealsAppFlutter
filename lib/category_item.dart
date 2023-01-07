@@ -9,12 +9,24 @@ class CategoryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
-        vertical: AppLayout.getWidth(15),
-        horizontal: AppLayout.getHeight(15),
+      padding: EdgeInsets.all(AppLayout.getWidth(15)),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            color.withOpacity(0.7),
+            color,
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(
+          AppLayout.getWidth(15),
+        ),
       ),
-      child: Text(title),
-
+      child: Text(
+        title,
+        style: Theme.of(context).textTheme.titleMedium,
+      ),
     );
   }
 }
