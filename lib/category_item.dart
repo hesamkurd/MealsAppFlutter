@@ -1,31 +1,48 @@
 import 'package:flutter/material.dart';
-import 'package:meals_app/utils/app_layout.dart';
+import 'package:meals_app/screens/category_meals_screen.dart';
+import './utils/app_layout.dart';
 
 class CategoryItem extends StatelessWidget {
+  final String id;
   final String title;
   final Color color;
-  const CategoryItem(this.title, this.color, {super.key});
+  const CategoryItem(this.id ,this.title, this.color, {super.key});
+
+  void selectCategory(BuildContext ctx) {
+    Navigator.of(ctx).pushNamed(
+      CategoryMealsScreen.routeName,
+      arguments: {
+        'id' : id,
+        'title': title,
+      }
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(AppLayout.getWidth(15)),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            color.withOpacity(0.7),
-            color,
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+    return InkWell(
+      onTap: () => selectCategory(context),
+      splashColor: Theme.of(context).primaryColor,
+      borderRadius: BorderRadius.circular(AppLayout.getHeight(15)),
+      child: Container(
+        padding: EdgeInsets.all(AppLayout.getWidth(15)),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              color.withOpacity(0.7),
+              color,
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(
+            AppLayout.getWidth(15),
+          ),
         ),
-        borderRadius: BorderRadius.circular(
-          AppLayout.getWidth(15),
+        child: Text(
+          title,
+          style: Theme.of(context).textTheme.titleMedium,
         ),
-      ),
-      child: Text(
-        title,
-        style: Theme.of(context).textTheme.titleMedium,
       ),
     );
   }
