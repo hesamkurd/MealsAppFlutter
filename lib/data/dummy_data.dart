@@ -66,7 +66,7 @@ const DUMMY_MEALS = [
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/poster_732f54bf-7bad-4816-8b8d-f61df5bd178b.jpeg',
     duration: 20,
     ingredients: [
       '4 Tomatoes',
@@ -99,7 +99,7 @@ const DUMMY_MEALS = [
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/medium_42daf63b-ada2-4f89-804c-7cc098df5c2b.webp',
     duration: 10,
     ingredients: [
       '1 Slice White Bread',
@@ -128,7 +128,7 @@ const DUMMY_MEALS = [
     affordability: Affordability.pricey,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/medium_161d60ac-ffb0-4b51-8977-681be7767096.webp',
     duration: 45,
     ingredients: [
       '300g Cattle Hack',
@@ -159,7 +159,7 @@ const DUMMY_MEALS = [
     affordability: Affordability.luxurious,
     complexity: Complexity.challenging,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/medium_d5edec93-ad1e-4618-b5cc-1a030a260f10.webp',
     duration: 60,
     ingredients: [
       '8 Veal Cutlets',
@@ -188,15 +188,15 @@ const DUMMY_MEALS = [
   Meal(
     id: 'm5',
     categories: [
-      'c2'
-          'c5',
+      'c2',
+      'c5',
       'c10',
     ],
     title: 'Salad with Smoked Salmon',
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/medium_9e9be7f2-d17c-4071-8ce1-76484078d23e.webp',
     duration: 15,
     ingredients: [
       'Arugula',
@@ -231,7 +231,7 @@ const DUMMY_MEALS = [
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/medium_6a242221-be4e-42b2-be53-64e0e914b450.webp',
     duration: 240,
     ingredients: [
       '4 Sheets of Gelatine',
@@ -266,7 +266,7 @@ const DUMMY_MEALS = [
     affordability: Affordability.affordable,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/medium_51cd46b9-9ac9-4981-b272-dfcc987bb4fc.webp',
     duration: 20,
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
@@ -297,7 +297,7 @@ const DUMMY_MEALS = [
     affordability: Affordability.pricey,
     complexity: Complexity.challenging,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/medium_1e460ede-fed8-442d-90c2-e7258e39fd84.webp',
     duration: 35,
     ingredients: [
       '4 Chicken Breasts',
@@ -330,7 +330,7 @@ const DUMMY_MEALS = [
     affordability: Affordability.affordable,
     complexity: Complexity.hard,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/medium_19ff7409-c691-4155-a5bc-f9de0084152d.webp',
     duration: 45,
     ingredients: [
       '1 Teaspoon melted Butter',
@@ -381,7 +381,7 @@ const DUMMY_MEALS = [
     affordability: Affordability.luxurious,
     complexity: Complexity.simple,
     imageUrl:
-        'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+        'https://www.jowhareh.com/images/Jowhareh/galleries_2/medium_0424d7b8-9ad9-47a7-a1d4-c29feed8da0d.webp',
     duration: 30,
     ingredients: [
       'White and Green Asparagus',
